@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — FORME</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="topline">
+      Бесплатная доставка от 7 000 ₽
+      <span>Коллекция осень / зима 2026</span>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a class="active" href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="head-actions">
+        <a href="favorites.html">❤️ <i id="fav-count">0</i></a>
+        <a href="cart.html">Корзина <i id="cart-count">0</i></a>
+        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <div class="page-intro">
+        <p class="eyebrow">FORME / SHOP</p>
+        <h1>Каталог<span>.</span></h1>
+        <p>Вещи, которые работают вместе. Выбирай своё.</p>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="filters">
+          <div class="filter-title">
+            <b>Фильтры</b>
+            <button id="reset-filters">Сбросить</button>
+          </div>
+
+          <label class="field-label" for="search-input">Поиск</label>
+          <input id="search-input" class="control" placeholder="Например, жакет">
+
+          <label class="field-label" for="category-filter">Категория</label>
+          <select id="category-filter" class="control">
+            <option value="all">Все категории</option>
+            <option>Верхняя одежда</option>
+            <option>Трикотаж</option>
+            <option>Брюки</option>
+            <option>Рубашки</option>
+            <option>Платья</option>
+            <option>Аксессуары</option>
+          </select>
+
+          <label class="field-label" for="size-filter">Размер</label>
+          <select id="size-filter" class="control">
+            <option value="all">Любой размер</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+
+          <label class="field-label" for="price-filter">Максимальная цена</label>
+          <div class="range-line">
+            <input type="range" id="price-filter" min="1000" max="20000" step="500" value="20000">
+            <span id="price-value">20 000 ₽</span>
+          </div>
+
+          <label class="check-line">
+            <input type="checkbox" id="sale-filter">
+            Только со скидкой
+          </label>
+
+          <p class="filter-hint">Подсказка: сочетай фильтры, чтобы быстрее найти нужную вещь.</p>
+        </aside>
+
+        <section class="catalog-results">
+          <div class="results-top">
+            <span id="results-count">Подбираем вещи…</span>
+            <select id="sort-select" class="control sort-control">
+              <option value="featured">Сначала рекомендуем</option>
+              <option value="price-asc">Сначала дешевле</option>
+              <option value="price-desc">Сначала дороже</option>
+              <option value="name">По названию</option>
+            </select>
+          </div>
+
+          <div class="product-grid" id="catalog-products"></div>
+
+          <div class="empty-state hidden" id="empty-state">
+            <span>♡</span>
+            <h3>Ничего не нашлось</h3>
+            <p>Попробуй изменить фильтры или сбросить их.</p>
+            <button class="btn btn-dark" id="empty-reset">Сбросить фильтры</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+      <p>Одежда вне времени.</p>
+      <div>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка и возврат</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

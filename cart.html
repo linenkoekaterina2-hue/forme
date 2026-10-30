@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — FORME</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="topline">
+      Бесплатная доставка от 7 000 ₽
+      <span>Коллекция осень / зима 2026</span>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="head-actions">
+        <a href="favorites.html">❤️ <i id="fav-count">0</i></a>
+        <a class="active" href="cart.html">Корзина <i id="cart-count">0</i></a>
+        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <div class="page-intro">
+        <p class="eyebrow">ALMOST YOURS</p>
+        <h1>Корзина<span>.</span></h1>
+        <p>Проверь свой выбор перед оформлением.</p>
+      </div>
+
+      <div class="cart-layout">
+        <section id="cart-items" class="cart-items"></section>
+
+        <aside class="cart-summary" id="cart-summary">
+          <p class="eyebrow">YOUR ORDER</p>
+          <h3>Итого</h3>
+
+          <div class="summary-row">
+            <span>Товары</span>
+            <b id="subtotal">0 ₽</b>
+          </div>
+
+          <div class="summary-row">
+            <span>Доставка</span>
+            <b id="shipping">Рассчитаем позже</b>
+          </div>
+
+          <div class="summary-total">
+            <span>К оплате</span>
+            <b id="total">0 ₽</b>
+          </div>
+
+          <p class="summary-note">Доставка бесплатно при заказе от 7 000 ₽</p>
+
+          <button id="checkout-btn" class="btn btn-dark btn-wide">Оформить заказ ↗</button>
+
+          <p class="secure-note">♡ Покупки без лишней суеты</p>
+        </aside>
+      </div>
+
+      <div class="empty-state" id="cart-empty">
+        <span>＋</span>
+        <h3>Корзина пока пустая</h3>
+        <p>Самое время найти что-нибудь своё.</p>
+        <a class="btn btn-dark" href="catalog.html">Выбрать вещи ↗</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+      <p>Одежда вне времени.</p>
+      <div>
+        <a href="catalog.html">Каталог</a>
+        <a href="delivery.html">Доставка и возврат</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORME — одежда вне времени</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="topline">Бесплатная доставка от 7 000 ₽ <span>Коллекция осень / зима 2026</span>
+        </div>
+        <header class="header">
+            <a class="logo" href="index.html">FORME<span>.</span>
+            </a>
+            <nav>
+                <a class="active" href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О бренде</a>
+                <a href="delivery.html">Доставка</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="head-actions">
+                <a href="favorites.html" aria-label="Избранное">❤️ <i id="fav-count">0</i>
+                </a>
+                <a href="cart.html" aria-label="Корзина">Корзина <i id="cart-count">0</i>
+                </a>
+                <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">NEW COLLECTION · FW 26</p>
+                    <h1>Меньше вещей.<br><em>Больше тебя.</em>
+                    </h1>
+                    <p class="hero-text">Продуманный гардероб на каждый день. Чистые линии, приятные фактуры и вещи, которые легко сочетаются между собой.</p>
+                    <a class="btn btn-dark" href="catalog.html">Смотреть коллекцию <span>↗</span>
+                    </a>
+                    <div class="hero-note">
+                        <span>01 / 03</span>
+                        <span>Одежда для твоего ритма</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.pinimg.com/1200x/8c/1f/31/8c1f318b155655fabb0de885ee613ed0.jpg" alt="Осенняя городская мода">
+                    <div class="image-label">FORME / AUTUMN EDIT</div>
+                </div>
+            </section>
+            <section class="section category-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">НАЙДИ СВОЁ</p>
+                        <h2>Гардероб по настроению</h2>
+                    </div>
+                    <a class="text-link" href="catalog.html">Весь каталог ↗</a>
+                </div>
+                <div class="category-grid">
+                    <a class="category-card" href="catalog.html?category=Верхняя одежда">
+                        <img src="https://i.pinimg.com/1200x/15/6d/fc/156dfc641a47c64b8da5a67978f377bd.jpg" alt="Пальто">
+                        <span>Верхняя одежда <b>↗</b></span>
+                    </a>
+                    <a class="category-card" href="catalog.html?category=Трикотаж">
+                        <img src="https://i.pinimg.com/736x/e9/67/97/e967971e8932458a61b1dbe8b474849b.jpg" alt="Трикотаж">
+                        <span>Трикотаж <b>↗</b>
+                        </span>
+                    </a>
+                    <a class="category-card" href="catalog.html?category=Брюки">
+                        <img src="https://i.pinimg.com/736x/1e/d5/7f/1ed57f6052709b8a76a1d5d62710329b.jpg" alt="Брюки">
+                        <span>Брюки и деним <b>↗</b></span>
+                    </a>
+                </div>
+            </section>
+            <section class="editorial">
+                <div class="editorial-photo">
+                    <img src="https://i.pinimg.com/736x/b1/e3/58/b1e35880f87a02d549e58cae0febf8b4.jpg" alt="Минималистичный образ">
+                </div>
+                <div class="editorial-copy">
+                    <p class="eyebrow">OUR PHILOSOPHY</p>
+                    <h2>Стиль — это<br><em>чувство себя.</em></h2>
+                    <p>Мы не гонимся за быстрыми трендами. Мы выбираем качественные материалы, спокойные оттенки и силуэты, к которым хочется возвращаться.</p>
+                    <a class="text-link" href="about.html">Познакомиться с FORME ↗</a>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">ВЫБРАЛИ ДЛЯ ТЕБЯ</p>
+                        <h2>Любимые вещи</h2>
+                    </div>
+                    <a class="text-link" href="catalog.html">Все новинки ↗</a>
+                </div>
+                <div class="product-grid" id="home-products">
+
+                </div>
+            </section>
+            <section class="newsletter">
+                <p class="eyebrow">FORME LETTER</p>
+                <h2>Немного вдохновения<br>в твоей почте.</h2>
+                <p>Новые коллекции, подборки и специальные предложения.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Твой e-mail" required>
+                    <button class="btn btn-dark">Подписаться ↗</button>
+                </form>
+                <small id="newsletter-message">Никакого спама. Только хорошее.</small>
+            </section>
+        </main>
+        <footer class="footer">
+            <a class="logo" href="index.html">FORME<span>.</span>
+            </a>
+            <p>Одежда вне времени.</p>
+            <div>
+                <a href="catalog.html">Каталог</a>
+                <a href="delivery.html">Доставка и возврат</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </footer>
+        <script src="js/app.js"></script>
+        </body>
+        </html>
+                    

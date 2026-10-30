@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное — FORME</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="topline">
+      Бесплатная доставка от 7 000 ₽
+      <span>Коллекция осень / зима 2026</span>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="head-actions">
+        <a class="active" href="favorites.html">❤️ <i id="fav-count">0</i></a>
+        <a href="cart.html">Корзина <i id="cart-count">0</i></a>
+        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <div class="page-intro">
+        <p class="eyebrow">YOUR PERSONAL EDIT</p>
+        <h1>Избранное<span>.</span></h1>
+        <p>Сохрани то, к чему хочется вернуться.</p>
+      </div>
+
+      <div class="product-grid" id="favorites-products"></div>
+
+      <div class="empty-state" id="favorites-empty">
+        <span>♡</span>
+        <h3>Пока здесь пусто</h3>
+        <p>Нажимай на сердечко у понравившихся вещей — они появятся здесь.</p>
+        <a class="btn btn-dark" href="catalog.html">Перейти в каталог ↗</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+      <p>Одежда вне времени.</p>
+      <div>
+        <a href="catalog.html">Каталог</a>
+        <a href="delivery.html">Доставка и возврат</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

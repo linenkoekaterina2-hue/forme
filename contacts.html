@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — FORME</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="topline">
+      Бесплатная доставка от 7 000 ₽
+      <span>Коллекция осень / зима 2026</span>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка</a>
+        <a class="active" href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="head-actions">
+        <a href="favorites.html">❤️ <i id="fav-count">0</i></a>
+        <a href="cart.html">Корзина <i id="cart-count">0</i></a>
+        <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <div class="page-intro">
+        <p class="eyebrow">LET'S TALK</p>
+        <h1>Мы на связи<span>.</span></h1>
+        <p>Подскажем с размером, заказом или выбором образа.</p>
+      </div>
+
+      <section class="contacts-layout">
+        <div class="contact-info">
+          <div>
+            <p class="eyebrow">ПОЧТА</p>
+            <a href="mailto:hello@forme.store">hello@forme.store</a>
+          </div>
+
+          <div>
+            <p class="eyebrow">МЫ ОТВЕЧАЕМ</p>
+            <p>Пн–Пт, 10:00–19:00<br>Сб–Вс, 11:00–17:00</p>
+          </div>
+
+          <div>
+            <p class="eyebrow">СОЦСЕТИ</p>
+            <p>
+              <a href="#social">Telegram ↗</a><br>
+              <a href="#social">ВКонтакте ↗</a>
+            </p>
+          </div>
+
+          <div class="contact-quote">«Хороший стиль начинается с комфорта».</div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h2>Напиши нам</h2>
+          <p>Обычно отвечаем в течение рабочего дня.</p>
+
+          <label for="contact-name">Как к тебе обращаться?</label>
+          <input id="contact-name" name="name" required placeholder="Имя">
+
+          <label for="contact-email">E-mail для ответа</label>
+          <input id="contact-email" name="email" type="email" required placeholder="name@example.com">
+
+          <label for="contact-topic">Тема обращения</label>
+          <select id="contact-topic" name="topic" class="control">
+            <option>Вопрос о товаре</option>
+            <option>Мой заказ</option>
+            <option>Доставка и возврат</option>
+            <option>Другое</option>
+          </select>
+
+          <label for="contact-message">Сообщение</label>
+          <textarea id="contact-message" name="message" required rows="4" placeholder="Расскажи, чем можем помочь..."></textarea>
+
+          <button class="btn btn-dark btn-wide">Отправить сообщение ↗</button>
+
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="index.html">FORME<span>.</span></a>
+      <p>Одежда вне времени.</p>
+      <div>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О бренде</a>
+        <a href="delivery.html">Доставка и возврат</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
